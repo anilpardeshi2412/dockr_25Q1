@@ -12,7 +12,7 @@ pipeline {
 				steps {
 			
 				sh '''
-						docker run -dp 95:80 --name c1 httpd
+						docker run -dp 90:80 --name c1 httpd
 						docker cp /mnt/dock1/index.html s1:/usr/local/apache2/htdocs/								
 					
 					'''
