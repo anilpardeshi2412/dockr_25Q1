@@ -2,7 +2,7 @@ pipeline {
 			agent {
 					label {
 								label "built-in"
-								customWorkspace "/mnt/dock13"
+								customWorkspace "/mnt/dock15"
 							}
 				}		
 	stages {
@@ -12,8 +12,8 @@ pipeline {
 				steps {
 			
 				sh '''
-						docker run -dp 140:80 --name c14 httpd
-						docker cp /mnt/dock1/index.html c14:/usr/local/apache2/htdocs								
+						docker run -dp 150:80 --name c15 httpd
+						docker cp /mnt/dock1/index.html c15:/usr/local/apache2/htdocs/								
 					
 					'''
 					}			
